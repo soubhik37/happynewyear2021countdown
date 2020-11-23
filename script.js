@@ -6,7 +6,7 @@ function countdown() {
     const gapSeconds = (newYearDate- currentDate)/1000;
     const days = Math.floor(gapSeconds /86400);
     const hours = Math.floor(gapSeconds/3600)%24;
-    const mins = Math.floor(gapSeconds/60)%1440;
+    const mins = Math.floor(gapSeconds/60)%60;
     const seconds = Math.floor(gapSeconds)%60;
     console.log(days +" "+ hours +" "+ mins +" "+ seconds);
     document.getElementById('days').innerHTML=days;
